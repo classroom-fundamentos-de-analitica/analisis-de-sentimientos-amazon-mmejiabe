@@ -162,7 +162,7 @@ def pregunta_05():
     -------------------------------------------------------------------------------------
     """
 
-    # Importe confusion_matrix
+     # Importe confusion_matrix
     from sklearn.metrics import confusion_matrix
 
     # Obtenga el pipeline de la pregunta 3.
@@ -177,7 +177,7 @@ def pregunta_05():
         y_pred=gridSearchCV.predict(X_train),
     )
 
-    cfm_test = gridSearchCV(
+    cfm_test = confusion_matrix(
         y_true=y_test,
         y_pred=gridSearchCV.predict(X_test),
     )
